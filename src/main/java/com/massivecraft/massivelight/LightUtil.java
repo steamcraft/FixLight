@@ -12,7 +12,7 @@ import org.bukkit.craftbukkit.v1_10_R1.CraftWorld;
  * It should be located in NMS.World and looks something like this:
  * The method should look something like this:
  *
-  public boolean w(BlockPosition blockposition)
+  public boolean width(BlockPosition blockposition)
   {
     boolean flag = false;
     if (!this.worldProvider.o()) {

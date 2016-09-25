@@ -23,7 +23,7 @@
 
     <groupId>com.alexknvl</groupId>
     <artifactId>fixlight</artifactId>
-    <version>0.1</version>
+    <version>0.2</version>
 
     <properties>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
@@ -43,8 +43,8 @@
                 <artifactId>maven-compiler-plugin</artifactId>
                 <version>2.5.1</version>
                 <configuration>
-                    <source>1.8</source>
-                    <target>1.8</target>
+                    <source>1.7</source>
+                    <target>1.7</target>
                 </configuration>
             </plugin>
 
@@ -76,8 +76,6 @@
                                     <exclude>net.sf.opencsv</exclude>
                                     <exclude>com.google.guava</exclude>
                                     <exclude>com.google.code.findbugs:jsr305</exclude>
-                                    <exclude>net.ess3:Essentials</exclude>
-                                    <exclude>net.milkbowl.vault:VaultAPI</exclude>
                                 </excludes>
                             </artifactSet>
                             <minimizeJar>true</minimizeJar>
@@ -85,21 +83,8 @@
                     </execution>
                 </executions>
             </plugin>
-
-            <plugin>
-                <groupId>net.orfjackal.retrolambda</groupId>
-                <artifactId>retrolambda-maven-plugin</artifactId>
-                <version>2.3.0</version>
-                <executions>
-                    <execution>
-                        <goals>
-                            <goal>process-main</goal>
-                            <goal>process-test</goal>
-                        </goals>
-                    </execution>
-                </executions>
-            </plugin>
         </plugins>
+
         <resources>
             <resource>
                 <directory>src/main/resources</directory>
@@ -113,43 +98,13 @@
 
     <dependencies>
         <dependency>
-            <groupId>org.yaml</groupId>
-            <artifactId>snakeyaml</artifactId>
-            <version>1.10</version>
-        </dependency>
-
-        <dependency>
-            <groupId>commons-collections</groupId>
-            <artifactId>commons-collections</artifactId>
-            <version>3.2.2</version>
-        </dependency>
-
-        <dependency>
-            <groupId>org.testng</groupId>
-            <artifactId>testng</artifactId>
-            <version>6.1.1</version>
-            <scope>test</scope>
-        </dependency>
-
-        <dependency>
-        	<groupId>com.sk89q</groupId>
-        	<artifactId>worldguard</artifactId>
-        	<version>LATEST</version>
-        </dependency>
-
-        <dependency>
-        	<groupId>com.sk89q</groupId>
-        	<artifactId>worldedit</artifactId>
-        	<version>LATEST</version>
-        </dependency>
-
-        <dependency>
             <groupId>org.bukkit</groupId>
             <artifactId>bukkit</artifactId>
             <version>1.10.2-R0.1-SNAPSHOT</version>
             <type>jar</type>
             <scope>provided</scope>
         </dependency>
+
 		<dependency>
             <groupId>org.bukkit</groupId>
             <artifactId>craftbukkit</artifactId>

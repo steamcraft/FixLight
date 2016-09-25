@@ -1,12 +1,11 @@
-main: com.massivecraft.massivelight.MassiveLight
-name: MassiveLight
-version: 2.0.0
-website: https://www.massivecraft.com
-authors: [Cayorion]
-description: §eMassiveLight is a plugin that fixes light errors. §aCayorion §efrom the minecraft server §aMassiveCraft §eis the lead programmer. Feel free to visit us at §bhttps://www.massivecraft.com
+main: com.massivecraft.massivelight.FixLight
+name: FixLight
+version: 0.2
+authors: [Cayorion, alexknvl]
+description: FixLight is a plugin that fixes light errors.
 depend: []
-load: startup
+commands:
+  fixlight:
+    description: Relights chunks.
+    usage: /fixlight <radius>
 permissions:
-  massivelight.basecommand: {description: use the MassiveLight base command, default: false}
-  massivelight.fix: {description: fix light in nearby chunks, default: false}
-  massivelight.version: {description: see plugin version, default: false}

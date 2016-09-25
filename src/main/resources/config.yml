@@ -1,0 +1,4 @@
+fixChunkGeneration: true
+maxRadius: 8
+chunksPerTick: 10
+tickDelay: 1
